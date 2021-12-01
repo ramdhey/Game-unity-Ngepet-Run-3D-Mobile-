@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 37fa6316cd8b0ce46b379fd9b1652ffa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SAIKYO
+  fontNames:
+  - SAIKYO
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0aa7dc0204d9bf04b8e8f870496fc815, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

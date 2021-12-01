@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 833dbef83f1724b4aa1ae027fc7ada43
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Wolfskin
+  fontNames:
+  - Wolfskin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00b4522147089af4e9cc7949f70ea607, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

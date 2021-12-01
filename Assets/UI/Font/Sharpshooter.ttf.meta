@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5ec7439cc3650734fb6e3b4423cfabe4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sharpshooter
+  fontNames:
+  - Sharpshooter
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 35d3f8b0d931c81478ce7127d0e36c60, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5029c552c11e28d4dba715f409dd7b30
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vintagio Classico
+  fontNames:
+  - Vintagio Classico
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 055201613446ca1429910844bd2ecaf9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

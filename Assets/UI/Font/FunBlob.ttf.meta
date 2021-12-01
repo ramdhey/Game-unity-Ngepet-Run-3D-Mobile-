@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b343ae13e8d60a24d92da4596b1a7bc5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fun Blob
+  fontNames:
+  - Fun Blob
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1264ce71deaadff49a41f2a3b9615c84, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
