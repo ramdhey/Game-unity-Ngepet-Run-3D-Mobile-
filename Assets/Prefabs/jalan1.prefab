@@ -202,9 +202,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7524500668764006962}
+  - component: {fileID: 4949281036530077770}
   m_Layer: 0
   m_Name: jalan1
-  m_TagString: RoadBabi
+  m_TagString: Jalan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +230,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4949281036530077770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6367572768297689600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 30}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6507187668415709179
 GameObject:
   m_ObjectHideFlags: 0

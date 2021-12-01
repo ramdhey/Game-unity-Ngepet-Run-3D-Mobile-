@@ -9,9 +9,9 @@ TagManager:
   - manusia
   - Babi
   - lilin
-  - RoadManusia
   - RoadBabi
   - coin
+  - Jalan
   layers:
   - Default
   - TransparentFX
