@@ -14,6 +14,7 @@ public class gameManager : MonoBehaviour
     public static int jumlahLilin;
 
     public GameObject manusia, babi;
+    public GameObject koin, lilin;
     int whichAvatarIsOn = 1;
 
     void Start()
@@ -23,8 +24,10 @@ public class gameManager : MonoBehaviour
         jumlahkoin = 0;
 
         babi.gameObject.SetActive(true);
+        koin.gameObject.SetActive(true);
 
         manusia.gameObject.SetActive(false);
+        lilin.gameObject.SetActive(false);
     }
 
 
@@ -48,17 +51,20 @@ public class gameManager : MonoBehaviour
             case 1:
                 whichAvatarIsOn = 2;
                 babi.SetActive(false);
+                koin.gameObject.SetActive(false);
 
                 manusia.SetActive(true);
+                lilin.gameObject.SetActive(true);
                 break;
 
             case 2:
                 whichAvatarIsOn = 1;
                 babi.SetActive(true);
+                koin.gameObject.SetActive(true);
 
                 manusia.SetActive(false);
-                jalanManusia.SetActive(false);
-
+                lilin.gameObject.SetActive(false);
                 break;
         }
     }
+}

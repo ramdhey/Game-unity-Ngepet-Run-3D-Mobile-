@@ -14,10 +14,10 @@ public class RoadBabi : MonoBehaviour
 
     public Vector3 lastPos;
 
-    //public void Awake()
-    //{
-    //    InvokeRepeating("SpawnRoad", 1f, 1f);
-    //}
+    public void Awake()
+    {
+        InvokeRepeating("SpawnRoad", 0f, 1f);
+    }
 
     private void Start()
     {

@@ -162,8 +162,8 @@ MonoBehaviour:
   LilinText: {fileID: 1302301986}
   manusia: {fileID: 340929179}
   babi: {fileID: 696037526}
-  jalanManusia: {fileID: 0}
-  jalanBabi: {fileID: 1984123042}
+  koin: {fileID: 2786272830602993274, guid: 9523ab35dd300a248afefa182640ed43, type: 3}
+  lilin: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
 --- !u!4 &74684847
 Transform:
   m_ObjectHideFlags: 0
@@ -3375,7 +3375,7 @@ MonoBehaviour:
   - {fileID: 1856739440235419675, guid: 357afcf316bd0ca40a38e6e78d2238de, type: 3}
   panjangjalan: 30
   initialJalan: 5
-  lastPos: {x: 0, y: 0, z: 30}
+  lastPos: {x: 0, y: 0, z: -50}
 --- !u!4 &1984123044
 Transform:
   m_ObjectHideFlags: 0
