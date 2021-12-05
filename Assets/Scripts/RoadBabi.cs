@@ -8,7 +8,7 @@ public class RoadBabi : MonoBehaviour
 {
     public GameObject[] roadPrefabs;
     //public float zspawn = -44.34f;
-    public float panjangjalan = 30f;
+    public float panjangjalan;
     public int initialJalan = 5;
     //public int nomorjalan = 3;
 

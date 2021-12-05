@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 5515331141613851277}
   m_Layer: 0
   m_Name: Gerobak  2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

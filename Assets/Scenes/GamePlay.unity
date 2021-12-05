@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4712,6 +4712,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548411888}
   m_CullTransparentMesh: 1
+--- !u!1 &1566904869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566904870}
+  m_Layer: 0
+  m_Name: Manusia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566904870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566904869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14732063, y: 0.6850071, z: 0.12422192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581431931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,12 +5990,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadPrefabs:
-  - {fileID: 2492823624385255559, guid: dbab8db846730bb469752abe06bb196a, type: 3}
-  - {fileID: 6367572768297689600, guid: 0d5566db8aa7451429b8efc6c5837f40, type: 3}
-  - {fileID: 1840284409488615264, guid: d6d3e0ce4d2565840a0d05e17aa0dc7b, type: 3}
-  - {fileID: 5084278212490105314, guid: d9f4cbe55cd12e34e8be257b9a752575, type: 3}
-  - {fileID: 1856739440235419675, guid: 357afcf316bd0ca40a38e6e78d2238de, type: 3}
-  panjangjalan: 30
+  - {fileID: 2206634849423070280, guid: 11ef99bac6250e0479693ebc4cfbc4b7, type: 3}
+  - {fileID: 1162124879588513658, guid: 46592c934842fd348a4e5bca5b9dd0fe, type: 3}
+  - {fileID: 8389938008803542758, guid: 1d3c23e277edea149a10e4803b24fcce, type: 3}
+  - {fileID: 9034426939071236216, guid: 9549635f30e88d445ba53d93f1b2f727, type: 3}
+  - {fileID: 7278857076944365816, guid: f2d199d62d201f74581e4ecbbeeb1a40, type: 3}
+  panjangjalan: 22.5
   initialJalan: 5
   lastPos: {x: 0, y: 0, z: -50}
 --- !u!4 &1984123044
