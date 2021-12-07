@@ -2926,7 +2926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070489656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1, z: -81}
+  m_LocalPosition: {x: 0, y: 1.1, z: -87.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 696037532}
@@ -6384,6 +6384,11 @@ MonoBehaviour:
   - {fileID: 8389938008803542758, guid: 1d3c23e277edea149a10e4803b24fcce, type: 3}
   - {fileID: 9034426939071236216, guid: 9549635f30e88d445ba53d93f1b2f727, type: 3}
   - {fileID: 7278857076944365816, guid: f2d199d62d201f74581e4ecbbeeb1a40, type: 3}
+  - {fileID: 3009061664717393539, guid: 24d6b8517483e754ba1a28e38be4ee3b, type: 3}
+  - {fileID: 7354847275412907339, guid: b9964f71bb895a44b8f6a340e5e2c7f7, type: 3}
+  - {fileID: 2982155726518760902, guid: 4cd9a6f9939b7964a88e8bfae0077aa4, type: 3}
+  - {fileID: 7873590391538834480, guid: 2a5806bb80a338042b0d9ff8bace2415, type: 3}
+  - {fileID: 2894135920890728760, guid: 84a1191e6b0c743448cf2e15e53e871c, type: 3}
   panjangjalan: 22.5
   initialJalan: 5
   lastPos: {x: 0, y: 0, z: -61}
@@ -7095,7 +7100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645801583756163442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.1, z: -90}
+  m_LocalPosition: {x: 0, y: 5.1, z: -96.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7158,7 +7163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037891942782352575, guid: b6532abac257a5145952ef8ae8861694, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6532abac257a5145952ef8ae8861694, type: 3}
