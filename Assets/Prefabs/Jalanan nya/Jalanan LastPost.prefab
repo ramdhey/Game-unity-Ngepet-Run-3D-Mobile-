@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 1037891942782352572}
   m_Layer: 0
   m_Name: Jalanan LastPost
-  m_TagString: Untagged
+  m_TagString: Jalan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

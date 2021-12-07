@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Lean;
 using Random = UnityEngine.Random;
+using GameLokal.Toolkit;
 
-public class RoadBabi : MonoBehaviour
+public class RoadBabi : MonoBehaviour, IEventListener<GameEvent>
 {
     public GameObject[] roadPrefabs;
     //public float zspawn = -44.34f;
@@ -14,9 +15,24 @@ public class RoadBabi : MonoBehaviour
 
     public Vector3 lastPos;
 
+    void OnEnable() {
+        this.EventStartListening<GameEvent>();
+    }
+
+    void OnDisable() {
+        this.EventStopListening<GameEvent>();
+    }
+
+    public void OnEvent(GameEvent gameEvent)
+    {
+        if(gameEvent.EventName == "jalan sudah despawn")
+        {
+            SpawnRoad();
+        }
+    }
     public void Awake()
     {
-        InvokeRepeating("SpawnRoad", 0f, 1f);
+        //InvokeRepeating("SpawnRoad", 0f, 1f);
     }
 
     private void Start()
