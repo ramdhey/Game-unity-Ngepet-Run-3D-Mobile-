@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 905943123194617652}
   m_Layer: 0
   m_Name: Jalanan_9
-  m_TagString: Untagged
+  m_TagString: Jalan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
