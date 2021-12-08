@@ -135,9 +135,9 @@ Transform:
   - {fileID: 4622121824797420803}
   - {fileID: 4622121825142590075}
   - {fileID: 4622121825768681884}
-  - {fileID: 7352353956175646437}
   - {fileID: 156213475532968873}
   - {fileID: 2258302818442160606}
+  - {fileID: 2148094146020420042}
   - {fileID: 171619658849689345}
   - {fileID: 3441156612577740398}
   - {fileID: 8328950017518720984}
@@ -616,7 +616,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 463620454632052365, guid: ec4f7a2d43488df4683a726a38209397, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 463620454632052365, guid: ec4f7a2d43488df4683a726a38209397, type: 3}
       propertyPath: m_LocalScale.x
@@ -1216,7 +1216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7050955153782578325, guid: 0ac191dd8a2863640805482338d90185, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7050955153782578325, guid: 0ac191dd8a2863640805482338d90185, type: 3}
       propertyPath: m_LocalScale.x
@@ -1434,11 +1434,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9097109826529993992, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
---- !u!4 &7352353956175646437 stripped
+--- !u!4 &2148094146020420042 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 430150909295854119, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9097109826529993992, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
   m_PrefabInstance: {fileID: 7201534044640480450}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7201534044868437546
