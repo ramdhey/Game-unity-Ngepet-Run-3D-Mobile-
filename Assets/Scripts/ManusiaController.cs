@@ -29,7 +29,7 @@ public class ManusiaController : MonoBehaviour
     void Update()
     {
 
-        anim.SetBool("isGameStarted", true); 
+        anim.SetBool("isGameStarted", true);
 
         if(speedmaju < maxSpeed)
         speedmaju += 0.1f * Time.deltaTime;
@@ -45,7 +45,7 @@ public class ManusiaController : MonoBehaviour
             pindah.y = -1;
             if (SwipeManager.swipeUp)
             {
-                Jump();
+                StartCoroutine(Jump());
             }
         }else
         {
@@ -102,9 +102,15 @@ public class ManusiaController : MonoBehaviour
 
 
 
-    private void Jump()
+    private IEnumerator Jump()
     {
+        anim.SetBool("isGrounded", false);
+
         pindah.y = jumpforce;
+
+        yield return new WaitForSeconds(1.3f);
+
+        anim.SetBool("isGrounded", true);
 
     }
 
