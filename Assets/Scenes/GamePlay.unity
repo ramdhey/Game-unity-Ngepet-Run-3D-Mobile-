@@ -2000,22 +2000,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &696037531
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696037526}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 3
 --- !u!4 &696037532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9153671217627632335, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
@@ -2037,7 +2021,7 @@ MonoBehaviour:
   jumpforce: 15
   maxSpeed: 30
   gravitasi: -20
-  laneDistance: 4
+  laneDistance: 2.5
   anim: {fileID: 696037530}
   gameManager: {fileID: 74684846}
 --- !u!1 &705507993
@@ -2913,7 +2897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070489656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1, z: -86}
+  m_LocalPosition: {x: 0, y: 0, z: -86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 696037532}
@@ -5695,7 +5679,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: babingepet_animation
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: e780d5ce71a5d48e6b0c3cf1ec6f3bb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e780d5ce71a5d48e6b0c3cf1ec6f3bb9, type: 3}
 --- !u!1 &1835836682
 GameObject:
@@ -5802,19 +5787,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_Height
-      value: 1.5909643
+      value: 1.7894241
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_Radius
-      value: 0.35
+      value: 0.40090555
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_Center.x
+      value: 0.04927689
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_Center.y
-      value: -0.20451784
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_Center.z
+      value: 0.20693439
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_Direction
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632330, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632331, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632331, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_Center.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153671217627632331, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
+      propertyPath: m_SkinWidth
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632333, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_Materials.Array.size
@@ -5838,7 +5847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632335, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9153671217627632335, guid: d48fcfca19627ef40a16721bfad108ef, type: 3}
       propertyPath: m_LocalPosition.z
