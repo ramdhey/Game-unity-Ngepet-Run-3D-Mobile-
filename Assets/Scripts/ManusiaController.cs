@@ -18,6 +18,7 @@ public class ManusiaController : MonoBehaviour
 
     public Animator anim;
     public gameManager gameManager;
+    public SwipeManager SwipeManager;
 
 
     void Start()

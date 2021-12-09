@@ -424,7 +424,7 @@ Transform:
   - {fileID: 6200974520311033718}
   - {fileID: 6200974520968698009}
   - {fileID: 6200974519552515952}
-  - {fileID: 3725932730097929427}
+  - {fileID: 5220361201305791484}
   - {fileID: 3468338726752392914}
   - {fileID: 6311541647309083039}
   - {fileID: 8725916670289294741}
@@ -1247,11 +1247,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9097109826529993992, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
---- !u!4 &3725932730097929427 stripped
+--- !u!4 &5220361201305791484 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 430150909295854119, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9097109826529993992, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
   m_PrefabInstance: {fileID: 3912818744729603828}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3912818744965624923

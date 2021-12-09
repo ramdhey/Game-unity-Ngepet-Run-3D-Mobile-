@@ -2375,7 +2375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -4.9499817, y: 44}
+  m_AnchoredPosition: {x: -4.950012, y: 44}
   m_SizeDelta: {x: -168.10004, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861062308
@@ -2918,6 +2918,7 @@ MonoBehaviour:
   laneDistance: 2.5
   anim: {fileID: 1070489657}
   gameManager: {fileID: 74684846}
+  SwipeManager: {fileID: 0}
 --- !u!4 &1070489659
 Transform:
   m_ObjectHideFlags: 0
@@ -6745,7 +6746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -4.9499817, y: -23.7}
+  m_AnchoredPosition: {x: -4.950012, y: -23.7}
   m_SizeDelta: {x: -168.10004, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038571700
@@ -7163,7 +7164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037891942782352575, guid: b6532abac257a5145952ef8ae8861694, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6532abac257a5145952ef8ae8861694, type: 3}
