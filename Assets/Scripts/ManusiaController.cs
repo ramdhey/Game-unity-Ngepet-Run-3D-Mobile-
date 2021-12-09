@@ -38,14 +38,14 @@ public class ManusiaController : MonoBehaviour
 
         pindah.y += gravitasi * Time.deltaTime;
 
-        //anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isGrounded", true);
 
         if (controller.isGrounded)
         {
             pindah.y = -1;
             if (SwipeManager.swipeUp)
             {
-                StartCoroutine(Jump());
+                Jump();
             }
         }else
         {
@@ -102,13 +102,11 @@ public class ManusiaController : MonoBehaviour
 
 
 
-    private IEnumerator Jump()
+    private void Jump()
     {
         anim.SetBool("isGrounded", false);
 
         pindah.y = jumpforce;
-
-        yield return new WaitForSeconds(1.3f);
 
         anim.SetBool("isGrounded", true);
 
@@ -137,6 +135,7 @@ public class ManusiaController : MonoBehaviour
         if (hit.transform.tag == "Obstacle")
         {
             gameManager.gameOver = true;
+            anim.SetBool("isDead", true);
         }
     }
 }
