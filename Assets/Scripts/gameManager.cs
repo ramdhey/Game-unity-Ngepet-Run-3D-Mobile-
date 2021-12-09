@@ -23,11 +23,11 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 1;
         jumlahkoin = 0;
 
-        babi.gameObject.SetActive(true);
-        koin.gameObject.SetActive(true);
+        babi.gameObject.SetActive(false);
+        koin.gameObject.SetActive(false);
 
-        manusia.gameObject.SetActive(false);
-        lilin.gameObject.SetActive(false);
+        manusia.gameObject.SetActive(true);
+        lilin.gameObject.SetActive(true);
     }
 
 
