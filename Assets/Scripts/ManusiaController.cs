@@ -18,13 +18,16 @@ public class ManusiaController : MonoBehaviour
 
     public Animator anim;
     public gameManager gameManager;
+    
+    public GameObject manusia, babi;
 
-
+    int whichAvatarIsOn = 2;
+    
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        SwitchAvatar();
     }
-
 
     void Update()
     {
@@ -135,6 +138,26 @@ public class ManusiaController : MonoBehaviour
         {
             gameManager.gameOver = true;
             anim.SetBool("isDead", true);
+        }
+    }
+    
+    public void SwitchAvatar()
+    {
+        switch (whichAvatarIsOn)
+        {
+            case 1:
+                whichAvatarIsOn = 2;
+                babi.SetActive(false);
+
+                manusia.SetActive(true);
+                break;
+
+            case 2:
+                whichAvatarIsOn = 1;
+                babi.SetActive(true);
+
+                manusia.SetActive(false);
+                break;
         }
     }
 }
