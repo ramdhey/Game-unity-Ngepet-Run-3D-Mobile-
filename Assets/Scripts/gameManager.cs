@@ -15,7 +15,7 @@ public class gameManager : MonoBehaviour
 
     public GameObject manusia, babi;
     public GameObject koin, lilin;
-    int whichAvatarIsOn = 1;
+    int whichAvatarIsOn = 2;
 
     void Start()
     {
