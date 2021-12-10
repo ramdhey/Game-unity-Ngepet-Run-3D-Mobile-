@@ -42,7 +42,6 @@ public class ManusiaController : MonoBehaviour
 
         if (controller.isGrounded)
         {
-            pindah.y = -1;
             if (SwipeManager.swipeUp)
             {
                 Jump();
