@@ -1830,7 +1830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &597092415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1581431932}
         m_TargetAssemblyTypeName: menuGameOver, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: Home
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3510,8 +3510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: -258.9}
-  m_SizeDelta: {x: 91.29, y: 30}
+  m_AnchoredPosition: {x: 4.1, y: -211.8}
+  m_SizeDelta: {x: 149, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264743546
 MonoBehaviour:
@@ -5107,7 +5107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1627372650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5501,7 +5501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -38.3}
+  m_AnchoredPosition: {x: 0, y: -1.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1747749084
@@ -5550,7 +5550,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 841670347}
         m_TargetAssemblyTypeName: PauseConroller, Assembly-CSharp
-        m_MethodName: Exit
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
