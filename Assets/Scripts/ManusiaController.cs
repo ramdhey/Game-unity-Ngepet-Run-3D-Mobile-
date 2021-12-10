@@ -18,7 +18,6 @@ public class ManusiaController : MonoBehaviour
 
     public Animator anim;
     public gameManager gameManager;
-    public SwipeManager SwipeManager;
 
 
     void Start()
@@ -30,7 +29,7 @@ public class ManusiaController : MonoBehaviour
     void Update()
     {
 
-        anim.SetBool("isGameStarted", true); 
+        anim.SetBool("isGameStarted", true);
 
         if(speedmaju < maxSpeed)
         speedmaju += 0.1f * Time.deltaTime;
@@ -39,7 +38,7 @@ public class ManusiaController : MonoBehaviour
 
         pindah.y += gravitasi * Time.deltaTime;
 
-        //anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isGrounded", true);
 
         if (controller.isGrounded)
         {
@@ -105,7 +104,11 @@ public class ManusiaController : MonoBehaviour
 
     private void Jump()
     {
+        anim.SetBool("isGrounded", false);
+
         pindah.y = jumpforce;
+
+        anim.SetBool("isGrounded", true);
 
     }
 
@@ -132,6 +135,7 @@ public class ManusiaController : MonoBehaviour
         if (hit.transform.tag == "Obstacle")
         {
             gameManager.gameOver = true;
+            anim.SetBool("isDead", true);
         }
     }
 }

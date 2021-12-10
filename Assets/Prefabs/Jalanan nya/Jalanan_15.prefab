@@ -672,6 +672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gerobak  (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7712561966465337868, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
 --- !u!4 &8085868923471177566 stripped
@@ -1136,6 +1140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gerobak  (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7712561966465337868, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
 --- !u!4 &3545382234078732531 stripped
@@ -1417,6 +1425,10 @@ PrefabInstance:
     - target: {fileID: 7712561966465337868, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
       propertyPath: m_Name
       value: Gerobak  (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712561966465337868, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
