@@ -5,6 +5,7 @@ using UnityEngine;
 public class Koin : MonoBehaviour
 {
     public float kecepatanputarankoin = 90f;
+    public GameObject coin;
     
     void Update()
     {
@@ -17,6 +18,10 @@ public class Koin : MonoBehaviour
         {
             gameManager.jumlahkoin += 1;
             gameObject.SetActive(false);
+        }
+        if (other.tag == "Obstacle")
+        {
+            coin.SetActive(false);
         }
     }
 }

@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kecepatanputarankoin: 90
+  coin: {fileID: 2786272830602993274}
 --- !u!54 &-5844414392636391016
 Rigidbody:
   m_ObjectHideFlags: 0
