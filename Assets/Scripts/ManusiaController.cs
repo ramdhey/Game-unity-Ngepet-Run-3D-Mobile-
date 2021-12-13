@@ -21,7 +21,7 @@ public class ManusiaController : MonoBehaviour
     
     public GameObject manusia, babi;
 
-    int whichAvatarIsOn = 2;
+    int whichAvatarIsOn = 1;
     
     void Start()
     {
