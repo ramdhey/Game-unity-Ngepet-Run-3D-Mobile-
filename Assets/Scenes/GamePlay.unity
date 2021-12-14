@@ -1712,7 +1712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -17.800005, y: 40.6}
+  m_AnchoredPosition: {x: -17.800049, y: 40.6}
   m_SizeDelta: {x: -102.40001, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580921204
@@ -2227,7 +2227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -30}
+  m_AnchoredPosition: {x: -30, y: -22.7}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747765121
@@ -2833,7 +2833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 59.8, y: -385.2}
+  m_AnchoredPosition: {x: 59.80005, y: -385.2}
   m_SizeDelta: {x: 35.4, y: 40.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051608005
@@ -2959,6 +2959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070489659}
   - component: {fileID: 1070489658}
+  - component: {fileID: 1070489660}
   - component: {fileID: 1070489657}
   m_Layer: 0
   m_Name: Player
@@ -2997,9 +2998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d768b3c009f374f9f9a7d260b39b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedmaju: 15
-  jumpforce: 12
-  maxSpeed: 30
+  speedmaju: 5
+  jumpforce: 10
+  maxSpeed: 20
   gravitasi: -20
   laneDistance: 2.5
   anim: {fileID: 340929183}
@@ -3023,6 +3024,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070489660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070489656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3354be3a71650ed4384d5dcb404bd277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laribabi: 10
+  lompatanbabi: 12
+  maxSpeedBabi: 30
+  gravitasi: -20
+  laneDistance: 2.5
+  animBabi: {fileID: 696037530}
+  gameManager: {fileID: 74684846}
+  manusia: {fileID: 129608064}
+  babi: {fileID: 9153671216265120578}
 --- !u!1 &1144468301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,9 +3513,9 @@ RectTransform:
   m_Father: {fileID: 2146114481}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 34.8, y: -30}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -166.2, y: -30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1260798898
@@ -4527,7 +4549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00018310547, y: -0.000061035156}
+  m_AnchoredPosition: {x: -0.00012207031, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 0.000061035156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481298922
@@ -4762,7 +4784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -17.800005, y: -29.7}
+  m_AnchoredPosition: {x: -17.800049, y: -29.7}
   m_SizeDelta: {x: -102.40001, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1548411890
@@ -5990,7 +6012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -60.200012, y: -37.100006}
+  m_AnchoredPosition: {x: -60.200073, y: -37.100006}
   m_SizeDelta: {x: 63.19995, y: 51.799988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945108557
