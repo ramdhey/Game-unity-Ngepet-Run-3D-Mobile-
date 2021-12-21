@@ -144,18 +144,70 @@ MonoBehaviour:
     m_StrikethroughOffset: 46
     m_StrikethroughThickness: 2.0571427
     m_TabWidth: 88
-  m_GlyphTable: []
-  m_CharacterTable: []
+  m_GlyphTable:
+  - m_Index: 19
+    m_Metrics:
+      m_Width: 76.53125
+      m_Height: 107.6875
+      m_HorizontalBearingX: 7.40625
+      m_HorizontalBearingY: 115.203125
+      m_HorizontalAdvance: 88.15625
+    m_GlyphRect:
+      m_X: 109
+      m_Y: 11
+      m_Width: 77
+      m_Height: 109
+    m_Scale: 1
+    m_AtlasIndex: 0
+  - m_Index: 66
+    m_Metrics:
+      m_Width: 76.53125
+      m_Height: 14.078125
+      m_HorizontalBearingX: 7.40625
+      m_HorizontalBearingY: 21.59375
+      m_HorizontalAdvance: 88.15625
+    m_GlyphRect:
+      m_X: 11
+      m_Y: 11
+      m_Width: 77
+      m_Height: 15
+    m_Scale: 1
+    m_AtlasIndex: 0
+  m_CharacterTable:
+  - m_ElementType: 1
+    m_Unicode: 48
+    m_GlyphIndex: 19
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 95
+    m_GlyphIndex: 66
+    m_Scale: 1
   m_AtlasTextures:
   - {fileID: 28981121099961358}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 1
-  m_UsedGlyphRects: []
-  m_FreeGlyphRects:
+  m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
+    m_Width: 98
+    m_Height: 36
+  - m_X: 98
+    m_Y: 0
+    m_Width: 98
+    m_Height: 130
+  m_FreeGlyphRects:
+  - m_X: 0
+    m_Y: 130
     m_Width: 1023
+    m_Height: 893
+  - m_X: 0
+    m_Y: 36
+    m_Width: 98
+    m_Height: 987
+  - m_X: 196
+    m_Y: 0
+    m_Width: 827
     m_Height: 1023
   m_fontInfo:
     Name: Electronic Highway Sign

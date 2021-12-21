@@ -144,18 +144,70 @@ MonoBehaviour:
     m_StrikethroughOffset: 42.4
     m_StrikethroughThickness: 0
     m_TabWidth: 28
-  m_GlyphTable: []
-  m_CharacterTable: []
+  m_GlyphTable:
+  - m_Index: 29
+    m_Metrics:
+      m_Width: 69.890625
+      m_Height: 105.75
+      m_HorizontalBearingX: 5.765625
+      m_HorizontalBearingY: 105.890625
+      m_HorizontalAdvance: 68.203125
+    m_GlyphRect:
+      m_X: 97
+      m_Y: 11
+      m_Width: 71
+      m_Height: 106
+    m_Scale: 1
+    m_AtlasIndex: 0
+  - m_Index: 76
+    m_Metrics:
+      m_Width: 63.703125
+      m_Height: 16.3125
+      m_HorizontalBearingX: -7.59375
+      m_HorizontalBearingY: 0.5625
+      m_HorizontalAdvance: 57.796875
+    m_GlyphRect:
+      m_X: 11
+      m_Y: 11
+      m_Width: 65
+      m_Height: 17
+    m_Scale: 1
+    m_AtlasIndex: 0
+  m_CharacterTable:
+  - m_ElementType: 1
+    m_Unicode: 48
+    m_GlyphIndex: 29
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 95
+    m_GlyphIndex: 76
+    m_Scale: 1
   m_AtlasTextures:
   - {fileID: 28584486757587946}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 1
-  m_UsedGlyphRects: []
-  m_FreeGlyphRects:
+  m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
+    m_Width: 86
+    m_Height: 38
+  - m_X: 86
+    m_Y: 0
+    m_Width: 92
+    m_Height: 127
+  m_FreeGlyphRects:
+  - m_X: 0
+    m_Y: 127
     m_Width: 1023
+    m_Height: 896
+  - m_X: 0
+    m_Y: 38
+    m_Width: 86
+    m_Height: 985
+  - m_X: 178
+    m_Y: 0
+    m_Width: 845
     m_Height: 1023
   m_fontInfo:
     Name: Bangers
