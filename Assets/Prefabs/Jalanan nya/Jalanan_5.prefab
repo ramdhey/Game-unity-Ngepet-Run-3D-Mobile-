@@ -1311,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Gerobak '
       objectReference: {fileID: 0}
+    - target: {fileID: 7712561966465337868, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
 --- !u!4 &5651247761852977142 stripped
@@ -1899,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8463598081067810738, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9097109826529993992, guid: eb1bdd8ecfbebd8418860c3c238d21ad, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1955,7 +1963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6936483037318910134, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7191005
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 6936483037318910134, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1963,7 +1971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6936483037318910134, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.8643341
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 6936483037318910134, guid: ef104403b698cd14b84e318166ae72cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2033,7 +2041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050955153782578325, guid: 0ac191dd8a2863640805482338d90185, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.43
+      value: 9.29
       objectReference: {fileID: 0}
     - target: {fileID: 7050955153782578325, guid: 0ac191dd8a2863640805482338d90185, type: 3}
       propertyPath: m_LocalRotation.w

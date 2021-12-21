@@ -2594,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Atap rumah
       objectReference: {fileID: 0}
+    - target: {fileID: 1369993610225337367, guid: 9430d200b83df6c4196fe4d79bb2487f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1749896131111362221, guid: 9430d200b83df6c4196fe4d79bb2487f, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -2608,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749896131111362221, guid: 9430d200b83df6c4196fe4d79bb2487f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.31
+      value: -7.47
       objectReference: {fileID: 0}
     - target: {fileID: 1749896131111362221, guid: 9430d200b83df6c4196fe4d79bb2487f, type: 3}
       propertyPath: m_LocalRotation.w
