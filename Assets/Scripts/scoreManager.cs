@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class scoreManager : MonoBehaviour
 {
-    public Text livescore;
+    public TextMeshProUGUI livescore;
     public float scoreCount;
     public float scorePersecond;
     public bool scoreIncreasing;
