@@ -21,12 +21,16 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
         Ubah(1);
         EventManager.AddListener(this);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             TambahinValue();
+        }
+        
+        if (other.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
         }
     }
 
