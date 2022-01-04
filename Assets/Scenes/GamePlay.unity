@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverPanel: {fileID: 1212890201}
-  CoinTxt: {fileID: 0}
-  LilinText: {fileID: 0}
+  CoinTxt: {fileID: 1555730687}
+  LilinText: {fileID: 211006059}
   manusiaController: {fileID: 1070489658}
   koin: {fileID: 2786272830602993274, guid: 9523ab35dd300a248afefa182640ed43, type: 3}
   lilin: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
@@ -5003,8 +5003,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 239.59998, y: -54.19995}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 222, y: -76}
+  m_SizeDelta: {x: 200, y: 69.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555730687
 MonoBehaviour:
@@ -5026,10 +5026,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 0123
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8bc44b84c216cf7439ea8c365eabdf24, type: 2}
+  m_sharedMaterial: {fileID: 21565502768208420, guid: 8bc44b84c216cf7439ea8c365eabdf24, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5053,10 +5053,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
+  m_fontSize: 72
   m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -6766,8 +6766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -151.1, y: -131.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -232.9, y: -148.2}
+  m_SizeDelta: {x: 200, y: 84.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084173354
 MonoBehaviour:
@@ -6816,14 +6816,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
+  m_fontSize: 86.55
   m_fontSizeBase: 90
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 100
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

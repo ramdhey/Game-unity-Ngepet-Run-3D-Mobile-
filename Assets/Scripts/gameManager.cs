@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,8 @@ public class gameManager : MonoBehaviour
     public static bool gameOver;
     public GameObject GameOverPanel;
     public static int jumlahkoin;
-    public Text CoinTxt;
-    public Text LilinText;
+    public TextMeshProUGUI CoinTxt;
+    public TextMeshProUGUI LilinText;
     public static int jumlahLilin;
     public ManusiaController manusiaController;
 
