@@ -11,12 +11,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
 
     private int mode;
 
-    private void OnEnable()
-    {
-        EventManager.AddListener(this);
-    }
-
-    private void OnDisable()
+    private void OnDestroy()
     {
         EventManager.RemoveListener(this);
     }
@@ -24,6 +19,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
     private void Start()
     {
         Ubah(1);
+        EventManager.AddListener(this);
     }
 
     private void OnTriggerEnter(Collider other)

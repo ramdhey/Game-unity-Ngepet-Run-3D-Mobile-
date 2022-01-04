@@ -31,8 +31,7 @@ public class BabiController : MonoBehaviour
 
     void Update()
     {
-
-        animBabi.SetBool("isGameStarted", true);
+        SetAnimasi("isGameStarted", true);
 
         if (laribabi < maxSpeedBabi)
             laribabi += 0.1f * Time.deltaTime;
@@ -41,7 +40,7 @@ public class BabiController : MonoBehaviour
 
         pindah.y += gravitasi * Time.deltaTime;
 
-        animBabi.SetBool("isGrounded", true);
+        SetAnimasi("isGrounded", true);
 
         if (controller.isGrounded)
         {
@@ -107,21 +106,21 @@ public class BabiController : MonoBehaviour
 
     private void Jump()
     {
-        animBabi.SetBool("isGrounded", false);
+        SetAnimasi("isGrounded", false);
 
         pindah.y = lompatanbabi;
 
-        animBabi.SetBool("isGrounded", true);
+        SetAnimasi("isGrounded", true);
 
     }
 
     private IEnumerator Slide()
     {
-        animBabi.SetBool("isSliding", true);
+        SetAnimasi("isSliding", true);
 
         yield return new WaitForSeconds(1.3f);
 
-        animBabi.SetBool("isSliding", false);
+        SetAnimasi("isSliding", false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -138,7 +137,7 @@ public class BabiController : MonoBehaviour
         if (hit.transform.tag == "Obstacle")
         {
             gameManager.gameOver = true;
-            animBabi.SetBool("isDead", true);
+            SetAnimasi("isDead", true);
         }
     }
 
@@ -160,5 +159,11 @@ public class BabiController : MonoBehaviour
                 manusia.SetActive(false);
                 break;
         }
+    }
+
+    private void SetAnimasi(string namaAnimasi, bool value)
+    {
+        if (!animBabi.gameObject.activeInHierarchy) return;
+        animBabi.SetBool(namaAnimasi, value);
     }
 }

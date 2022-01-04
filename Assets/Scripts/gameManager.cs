@@ -19,6 +19,11 @@ public class gameManager : Singleton<gameManager>
     
     public GameObject koin, lilin;
 
+    protected override bool ShouldNotDestroyOnLoad()
+    {
+        return false;
+    }
+
     void Start()
     {
         gameOver = false;

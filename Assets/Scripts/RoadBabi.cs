@@ -14,12 +14,8 @@ public class RoadBabi : MonoBehaviour, IEventListener<GameEvent>
     //public int nomorjalan = 3;
 
     public Vector3 lastPos;
-
-    void OnEnable() {
-        this.EventStartListening<GameEvent>();
-    }
-
-    void OnDisable() {
+    
+    void OnDestroy() {
         this.EventStopListening<GameEvent>();
     }
 
@@ -37,6 +33,7 @@ public class RoadBabi : MonoBehaviour, IEventListener<GameEvent>
 
     private void Start()
     {
+        this.EventStartListening<GameEvent>();
         for (int i = 0; i < initialJalan; i++)
         {
             SpawnRoad();

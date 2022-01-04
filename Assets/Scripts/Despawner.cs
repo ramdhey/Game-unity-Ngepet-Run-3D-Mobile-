@@ -10,8 +10,8 @@ public class Despawner : MonoBehaviour
         if(other.CompareTag("Jalan"))
         {
             Debug.Log($"Despawn{other.name}");
-            LeanPool.Despawn(other.gameObject);
             GameEvent.Trigger("jalan sudah despawn");
+            LeanPool.Despawn(other.gameObject);
         }
     }
 }
