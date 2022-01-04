@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameLokal.Toolkit;
 using UnityEngine;
 
 public class ManusiaController : MonoBehaviour
@@ -146,17 +147,21 @@ public class ManusiaController : MonoBehaviour
         switch (whichAvatarIsOn)
         {
             case 1:
+                // Jadi Manusia
                 whichAvatarIsOn = 2;
                 babi.SetActive(false);
 
                 manusia.SetActive(true);
+                GameEvent.Trigger("Jadi Manusia");
                 break;
 
             case 2:
+                // Jadi Babi
                 whichAvatarIsOn = 1;
                 babi.SetActive(true);
 
                 manusia.SetActive(false);
+                GameEvent.Trigger("Jadi Babi");
                 break;
         }
     }

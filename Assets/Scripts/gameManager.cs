@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using GameLokal.Toolkit;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class gameManager : MonoBehaviour
+public class gameManager : Singleton<gameManager>
 {
     public static bool gameOver;
     public GameObject GameOverPanel;
