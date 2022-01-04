@@ -137,7 +137,7 @@ public class ManusiaController : MonoBehaviour
     {
         if (hit.transform.tag == "Obstacle")
         {
-            gameManager.gameOver = true;
+            gameManager.Instance.GameOver();
             anim.SetBool("isDead", true);
         }
     }

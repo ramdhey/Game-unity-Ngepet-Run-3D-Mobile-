@@ -42,7 +42,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
         }
         else
         {
-            gameManager.jumlahLilin++;
+            gameManager.Instance.TambahinLilin();
         }
 
         Destroy(gameObject);

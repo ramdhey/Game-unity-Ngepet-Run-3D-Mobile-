@@ -12,8 +12,10 @@ public class gameManager : Singleton<gameManager>
     public GameObject GameOverPanel;
     public static int jumlahkoin;
     public TextMeshProUGUI CoinTxt;
-    public TextMeshProUGUI LilinText;
     public static int jumlahLilin;
+    public Image barLilin;
+    public int maxlilin = 15;
+    public int konsumsiLilinPerSec = 1;
     public ManusiaController manusiaController;
 
     
@@ -29,11 +31,21 @@ public class gameManager : Singleton<gameManager>
         gameOver = false;
         Time.timeScale = 1;
         jumlahkoin = 0;
+        jumlahLilin = maxlilin;
 
         koin.gameObject.SetActive(true);
         lilin.gameObject.SetActive(false);
+        InvokeRepeating("KuranginLilin", 1f, 1f);
     }
 
+    private void KuranginLilin()
+    {
+        jumlahLilin -= konsumsiLilinPerSec;
+        if (jumlahLilin <= 0)
+        {
+            GameOver();
+        }
+    }
 
     void Update()
     {
@@ -44,11 +56,25 @@ public class gameManager : Singleton<gameManager>
         }
 
         CoinTxt.text = " " + jumlahkoin;
-        LilinText.text = " " + jumlahLilin;
+        barLilin.fillAmount = (float)jumlahLilin / maxlilin;
     }
 
     public void SwitchAvatar()
     {
         manusiaController.SwitchAvatar();
+    }
+
+    public void TambahinLilin()
+    {
+        jumlahLilin++;
+        if (jumlahLilin > maxlilin)
+        {
+            jumlahLilin = maxlilin;
+        }
+    }
+
+    public void GameOver()
+    {
+        gameOver = true;
     }
 }
