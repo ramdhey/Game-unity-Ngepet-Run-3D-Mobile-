@@ -8,6 +8,16 @@ using UnityEngine.UI;
 
 public class gameManager : Singleton<gameManager>
 {
+    public TextMeshProUGUI livescore;
+    public TextMeshProUGUI scoretxt;
+    public float scoreCount;
+    public float scorePersecond;
+    public bool scoreIncreasing;
+
+    public TextMeshProUGUI Hiscore;
+    public float HiscoreCount;
+
+
     public static bool gameOver;
     public GameObject GameOverPanel;
     public static int jumlahkoin;
@@ -28,6 +38,12 @@ public class gameManager : Singleton<gameManager>
 
     void Start()
     {
+        if (PlayerPrefs.HasKey(""))
+        {
+            HiscoreCount = PlayerPrefs.GetFloat("");
+        }
+
+
         gameOver = false;
         Time.timeScale = 1;
         jumlahkoin = 0;
@@ -49,10 +65,29 @@ public class gameManager : Singleton<gameManager>
 
     void Update()
     {
+
+//ScoreManager
+        if (scoreIncreasing)
+        {
+            scoreCount += scorePersecond * Time.deltaTime;
+        }
+        if (scoreCount > HiscoreCount)
+        {
+            HiscoreCount = scoreCount;
+            PlayerPrefs.SetFloat("", HiscoreCount);
+        }
+
+        livescore.text = "  " + Mathf.Round(scoreCount);
+        Hiscore.text = "" + Mathf.Round(HiscoreCount);
+
+
+
         if (gameOver)
         {
             Time.timeScale = 0;
             GameOverPanel.SetActive(true);
+            
+            scoretxt.text = "  " + Mathf.Round(scoreCount);
         }
 
         CoinTxt.text = " " + jumlahkoin;
@@ -76,5 +111,6 @@ public class gameManager : Singleton<gameManager>
     public void GameOver()
     {
         gameOver = true;
+
     }
 }
