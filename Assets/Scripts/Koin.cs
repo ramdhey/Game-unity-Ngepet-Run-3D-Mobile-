@@ -17,6 +17,10 @@ public class Koin : MonoBehaviour
         if (other.tag == "Babi")
         {
             gameManager.jumlahkoin += 1;
+
+            PlayerPrefs.SetInt("", gameManager.jumlahkoin);
+
+
             gameObject.SetActive(false);
         }
         if (other.tag == "Obstacle")

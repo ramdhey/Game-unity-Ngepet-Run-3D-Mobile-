@@ -17,6 +17,7 @@ public class gameManager : Singleton<gameManager>
     public TextMeshProUGUI Hiscore;
     public float HiscoreCount;
 
+    public TextMeshProUGUI CoinGOTxt;
 
     public static bool gameOver;
     public GameObject GameOverPanel;
@@ -36,6 +37,8 @@ public class gameManager : Singleton<gameManager>
         return false;
     }
 
+   
+
     void Start()
     {
         if (PlayerPrefs.HasKey(""))
@@ -43,10 +46,14 @@ public class gameManager : Singleton<gameManager>
             HiscoreCount = PlayerPrefs.GetFloat("");
         }
 
+        
 
         gameOver = false;
         Time.timeScale = 1;
-        jumlahkoin = 0;
+        
+
+
+
         jumlahLilin = maxlilin;
 
         koin.gameObject.SetActive(true);
@@ -88,6 +95,7 @@ public class gameManager : Singleton<gameManager>
             GameOverPanel.SetActive(true);
             
             scoretxt.text = "  " + Mathf.Round(scoreCount);
+            CoinGOTxt.text = " " + jumlahkoin;
         }
 
         CoinTxt.text = " " + jumlahkoin;

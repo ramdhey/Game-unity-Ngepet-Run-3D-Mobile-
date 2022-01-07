@@ -8,6 +8,7 @@ public class BabiController : MonoBehaviour
     private Vector3 pindah;
 
 
+    public static int jumlahkoin;
     public float laribabi;
     public float lompatanbabi;
     public float maxSpeedBabi;
@@ -23,10 +24,14 @@ public class BabiController : MonoBehaviour
 
     int whichAvatarIsOn = 1;
 
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         SwitchAvatar();
+
+
+        jumlahkoin = PlayerPrefs.GetInt("");
     }
 
     void Update()
