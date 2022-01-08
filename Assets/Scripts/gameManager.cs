@@ -27,7 +27,7 @@ public class gameManager : Singleton<gameManager>
     public Image barLilin;
     public int maxlilin = 15;
     public int konsumsiLilinPerSec = 1;
-    public ManusiaController manusiaController;
+    public BabiController manusiaController;
 
     
     public GameObject koin, lilin;

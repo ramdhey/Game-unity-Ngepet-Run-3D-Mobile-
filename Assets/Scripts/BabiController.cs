@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameLokal.Toolkit;
 using UnityEngine;
 
-public class BabiController : MonoBehaviour
+public class BabiController : Singleton<BabiController>
 {
     private CharacterController controller;
     private Vector3 pindah;
@@ -17,12 +18,13 @@ public class BabiController : MonoBehaviour
     private int desiredLane = 1; //(0=Left;1=middle;2=right)
     public float laneDistance = 2.5f; //The distance between two lanes atau jarak antara dua jalur
 
+    public Animator animManusia;
     public Animator animBabi;
     public gameManager gameManager;
 
     public GameObject manusia, babi;
 
-    int whichAvatarIsOn = 1;
+    public static int whichAvatarIsOn = 1;
 
 
     void Start()
@@ -155,6 +157,7 @@ public class BabiController : MonoBehaviour
                 babi.SetActive(false);
 
                 manusia.SetActive(true);
+                GameEvent.Trigger("Jadi Manusia");
                 break;
 
             case 2:
@@ -162,13 +165,21 @@ public class BabiController : MonoBehaviour
                 babi.SetActive(true);
 
                 manusia.SetActive(false);
+                GameEvent.Trigger("Jadi Babi");
                 break;
         }
     }
 
     private void SetAnimasi(string namaAnimasi, bool value)
     {
-        if (!animBabi.gameObject.activeInHierarchy) return;
-        animBabi.SetBool(namaAnimasi, value);
+        if (animBabi.gameObject.activeInHierarchy)
+        {
+            animBabi.SetBool(namaAnimasi, value);
+        }
+        
+        if (animManusia.gameObject.activeInHierarchy)
+        {
+            animManusia.SetBool(namaAnimasi, value);
+        }
     }
 }

@@ -18,6 +18,7 @@ public class ManusiaController : MonoBehaviour
     public float laneDistance = 4; //The distance between two lanes atau jarak antara dua jalur
 
     public Animator anim;
+    public Animator animBabi;
     public gameManager gameManager;
     
     public GameObject manusia, babi;
@@ -152,7 +153,7 @@ public class ManusiaController : MonoBehaviour
                 babi.SetActive(false);
 
                 manusia.SetActive(true);
-                GameEvent.Trigger("Jadi Manusia");
+                
                 break;
 
             case 2:
@@ -161,7 +162,7 @@ public class ManusiaController : MonoBehaviour
                 babi.SetActive(true);
 
                 manusia.SetActive(false);
-                GameEvent.Trigger("Jadi Babi");
+                
                 break;
         }
     }

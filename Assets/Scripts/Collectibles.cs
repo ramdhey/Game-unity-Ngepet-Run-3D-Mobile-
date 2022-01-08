@@ -18,7 +18,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
 
     private void Start()
     {
-        Ubah(1);
+        Ubah(BabiController.whichAvatarIsOn);
         EventManager.AddListener(this);
     }
     private void OnTriggerEnter(Collider other)
@@ -51,7 +51,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
     public void Ubah(int i)
     {
         mode = i;
-        if (i == 0)
+        if (i == 1)
         {
             coin.SetActive(true);
             lilin.SetActive(false);
@@ -67,11 +67,11 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
     {
         if (e.EventName == "Jadi Manusia")
         {
-            Ubah(1);
+            Ubah(2);
         }
         else if (e.EventName == "Jadi Babi")
         {
-            Ubah(0);
+            Ubah(1);
         }
     }
 }

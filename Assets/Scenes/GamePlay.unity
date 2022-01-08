@@ -170,7 +170,7 @@ MonoBehaviour:
   barLilin: {fileID: 573710169}
   maxlilin: 15
   konsumsiLilinPerSec: 1
-  manusiaController: {fileID: 1070489658}
+  manusiaController: {fileID: 1070489660}
   koin: {fileID: 2786272830602993274, guid: 9523ab35dd300a248afefa182640ed43, type: 3}
   lilin: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
 --- !u!4 &74684847
@@ -2248,7 +2248,7 @@ MonoBehaviour:
   - {fileID: 2478702689715367497, guid: 98f6eb7b6ed39fb4588eb177796a0c1c, type: 3}
   - {fileID: 6435839770554083834, guid: 7337d56d57deb8a45ab4b98e028cee7d, type: 3}
   - {fileID: 777830244990074253, guid: 12c1d1af50993bf4da9885f6bcdd3ef6, type: 3}
-  initialPrefabs: 3
+  initialPrefabs: 4
   itemLengths: 60
   lastPos: {x: 0, y: 0, z: -50}
 --- !u!65 &740794322
@@ -3311,7 +3311,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070489659}
-  - component: {fileID: 1070489658}
   - component: {fileID: 1070489660}
   - component: {fileID: 1070489657}
   m_Layer: 0
@@ -3339,27 +3338,6 @@ CharacterController:
   m_SkinWidth: 0.008
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.65, z: 0}
---- !u!114 &1070489658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070489656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39d768b3c009f374f9f9a7d260b39b1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedmaju: 5
-  jumpforce: 10
-  maxSpeed: 20
-  gravitasi: -20
-  laneDistance: 2.5
-  anim: {fileID: 340929183}
-  gameManager: {fileID: 74684846}
-  manusia: {fileID: 129608064}
-  babi: {fileID: 9153671216265120578}
 --- !u!4 &1070489659
 Transform:
   m_ObjectHideFlags: 0
@@ -3389,11 +3367,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3354be3a71650ed4384d5dcb404bd277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laribabi: 10
+  laribabi: 15
   lompatanbabi: 12
   maxSpeedBabi: 30
   gravitasi: -20
   laneDistance: 2.5
+  animManusia: {fileID: 340929183}
   animBabi: {fileID: 696037530}
   gameManager: {fileID: 74684846}
   manusia: {fileID: 129608064}
@@ -6405,7 +6384,7 @@ MonoBehaviour:
   - {fileID: 2575581176194537483, guid: 09d9473b9983aba4c95e3cf6b56a9b44, type: 3}
   - {fileID: 2894135920890728760, guid: 84a1191e6b0c743448cf2e15e53e871c, type: 3}
   panjangjalan: 33.75
-  initialJalan: 3
+  initialJalan: 4
   lastPos: {x: 0, y: 0, z: -50}
 --- !u!4 &1984123044
 Transform:
@@ -7144,7 +7123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3234c14495aed9b46b614df2fba7e865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 9153671216265120580}
+  target: {fileID: 1070489659}
 --- !u!4 &645801583756163447
 Transform:
   m_ObjectHideFlags: 0
