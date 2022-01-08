@@ -23,7 +23,7 @@ public class ItemCollectibles : MonoBehaviour, IEventListener<GameEvent>
 
     public void OnEvent(GameEvent gameEvent)
     {
-        if(gameEvent.EventName == "jalan sudah despawn")
+        if(gameEvent.EventName == "jalan item sudah despawn")
         {
             spawnItem();
         }
@@ -44,6 +44,7 @@ public class ItemCollectibles : MonoBehaviour, IEventListener<GameEvent>
 
         int itemIndex = Random.Range(0, ItemPrefabs.Length);
         GameObject obj = Lean.Pool.LeanPool.Spawn(ItemPrefabs[itemIndex], spawnPos, transform.rotation);
-        lastPos = obj.transform.position;    
+        lastPos = obj.transform.position;   
+        Debug.Log($"Spawning Road Item {obj.name}");
     }
 }

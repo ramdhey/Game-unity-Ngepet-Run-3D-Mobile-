@@ -48,5 +48,6 @@ public class RoadBabi : MonoBehaviour, IEventListener<GameEvent>
         int roadIndex = Random.Range(0, roadPrefabs.Length);
         GameObject g = Lean.Pool.LeanPool.Spawn(roadPrefabs[roadIndex], spawnPos, transform.rotation);
         lastPos = g.transform.position;
+        Debug.Log($"Spawning Road {g.name}");
     }
 }

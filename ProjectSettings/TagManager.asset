@@ -12,6 +12,7 @@ TagManager:
   - RoadBabi
   - coin
   - Jalan
+  - Jalan Item
   layers:
   - Default
   - TransparentFX
