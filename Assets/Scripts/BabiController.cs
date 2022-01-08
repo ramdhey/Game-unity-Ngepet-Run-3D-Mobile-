@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using GameLokal.Toolkit;
 using UnityEngine;
 
-public class BabiController : Singleton<BabiController>
+public class BabiController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 pindah;
@@ -30,8 +30,7 @@ public class BabiController : Singleton<BabiController>
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        SwitchAvatar();
-
+        JadiBabi();
 
         jumlahkoin = PlayerPrefs.GetInt("");
     }
@@ -153,21 +152,31 @@ public class BabiController : Singleton<BabiController>
         switch (whichAvatarIsOn)
         {
             case 1:
-                whichAvatarIsOn = 2;
-                babi.SetActive(false);
-
-                manusia.SetActive(true);
-                GameEvent.Trigger("Jadi Manusia");
+                JadiManusia();
                 break;
 
             case 2:
-                whichAvatarIsOn = 1;
-                babi.SetActive(true);
-
-                manusia.SetActive(false);
-                GameEvent.Trigger("Jadi Babi");
+                JadiBabi();
                 break;
         }
+    }
+
+    private void JadiManusia()
+    {
+        whichAvatarIsOn = 2;
+        babi.SetActive(false);
+
+        manusia.SetActive(true);
+        GameEvent.Trigger("Jadi Manusia");
+    }
+
+    private void JadiBabi()
+    {
+        whichAvatarIsOn = 1;
+        babi.SetActive(true);
+
+        manusia.SetActive(false);
+        GameEvent.Trigger("Jadi Babi");
     }
 
     private void SetAnimasi(string namaAnimasi, bool value)

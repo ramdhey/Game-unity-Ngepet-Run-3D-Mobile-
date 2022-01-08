@@ -36,7 +36,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
 
     private void TambahinValue()
     {
-        if (mode == 0)
+        if (mode == 1)
         {
             gameManager.jumlahkoin++;
         }
