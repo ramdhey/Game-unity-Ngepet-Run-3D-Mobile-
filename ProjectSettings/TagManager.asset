@@ -13,6 +13,7 @@ TagManager:
   - coin
   - Jalan
   - Jalan Item
+  - hantu
   layers:
   - Default
   - TransparentFX
