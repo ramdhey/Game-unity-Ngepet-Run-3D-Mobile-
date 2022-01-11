@@ -46,7 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6940899912757790592}
   hantu: {fileID: 7314721729792519540}
-  manusia: {fileID: 2834658586747613159, guid: cb7c9bd8c66ea49c1ba9f977b59165ce, type: 3}
   activationDistance: 15
 --- !u!95 &6940899912757790592
 Animator:
@@ -121,6 +120,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d17613e9f74344c46aa4be4fc4c13a13, type: 3}
       propertyPath: m_Name
       value: poci
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d17613e9f74344c46aa4be4fc4c13a13, type: 3}
+      propertyPath: m_TagString
+      value: hantu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d17613e9f74344c46aa4be4fc4c13a13, type: 3}

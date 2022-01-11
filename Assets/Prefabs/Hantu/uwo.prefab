@@ -46,7 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7564626085431544827}
   hantu: {fileID: 8572919937495725906}
-  manusia: {fileID: 2834658586747613159, guid: cb7c9bd8c66ea49c1ba9f977b59165ce, type: 3}
   activationDistance: 15
 --- !u!95 &7564626085431544827
 Animator:
@@ -121,6 +120,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f88130e29e5944b0eab5b2d83ea00339, type: 3}
       propertyPath: m_Name
       value: genderuwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f88130e29e5944b0eab5b2d83ea00339, type: 3}
+      propertyPath: m_TagString
+      value: hantu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f88130e29e5944b0eab5b2d83ea00339, type: 3}

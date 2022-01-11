@@ -7,6 +7,8 @@ public class Hantu : MonoBehaviour
 
     public Animator anim;
     public GameObject hantu;
+    BabiController manusia;
+
     public float activationDistance = 15f;
 
     private void Awake()
@@ -21,7 +23,7 @@ public class Hantu : MonoBehaviour
 
     void Update()
     {
-        GameObject manusia = GameObject.FindGameObjectWithTag("manusia");
+        manusia = GameObject.FindGameObjectWithTag("manusia").GetComponent<BabiController>();
 
         if ((hantu.transform.position - manusia.transform.position).magnitude < activationDistance)
         {
