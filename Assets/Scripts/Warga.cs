@@ -5,21 +5,30 @@ using UnityEngine;
 public class Warga : MonoBehaviour
 {
     Animator anim;
+    public GameObject warga;
+    public float triggerDistance = 15f;
 
-    private void Awake()
+    gameManager gameManager;
+
+    void Awake()
     {
         anim = GetComponent<Animator>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        GameObject babi = GameObject.FindGameObjectWithTag("Babi");
+
+        if ((warga.transform.position - babi.transform.position).magnitude < triggerDistance)
+        {
+            StartCoroutine("catchBabi");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator catchBabi()
     {
-        
+        anim.SetTrigger("isCatching");
+        yield return new WaitForSeconds(1);
+        gameManager.gameOver = true;
     }
 }

@@ -161,7 +161,7 @@ public class BabiController : MonoBehaviour
         }
     }
 
-    private void JadiManusia()
+    public void JadiManusia()
     {
         whichAvatarIsOn = 2;
         babi.SetActive(false);
@@ -170,7 +170,7 @@ public class BabiController : MonoBehaviour
         GameEvent.Trigger("Jadi Manusia");
     }
 
-    private void JadiBabi()
+    public void JadiBabi()
     {
         whichAvatarIsOn = 1;
         babi.SetActive(true);
