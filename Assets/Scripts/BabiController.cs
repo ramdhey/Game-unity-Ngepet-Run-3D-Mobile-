@@ -24,6 +24,8 @@ public class BabiController : MonoBehaviour
 
     public GameObject manusia, babi;
 
+    // Babi = 1
+    // Manusia = 2
     public static int whichAvatarIsOn = 1;
 
 
@@ -142,7 +144,7 @@ public class BabiController : MonoBehaviour
     {
         if (hit.transform.tag == "Obstacle")
         {
-            gameManager.gameOver = true;
+            gameManager.Instance.gameOver = true;
             SetAnimasi("isDead", true);
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,17 +10,21 @@ public class Warga : MonoBehaviour
     public float triggerDistance = 15f;
 
     gameManager gameManager;
+    private GameObject player;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void Update()
     {
-        GameObject babi = GameObject.FindGameObjectWithTag("Babi");
-
-        if ((warga.transform.position - babi.transform.position).magnitude < triggerDistance)
+        if ((warga.transform.position - player.transform.position).magnitude < triggerDistance)
         {
             StartCoroutine("catchBabi");
         }
@@ -29,6 +34,10 @@ public class Warga : MonoBehaviour
     {
         anim.SetTrigger("isCatching");
         yield return new WaitForSeconds(1);
-        gameManager.gameOver = true;
+
+        if (BabiController.whichAvatarIsOn == 1)
+        {
+            gameManager.Instance.GameOver();
+        }
     }
 }

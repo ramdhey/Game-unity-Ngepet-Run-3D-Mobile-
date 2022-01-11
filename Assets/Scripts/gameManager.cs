@@ -19,7 +19,7 @@ public class gameManager : Singleton<gameManager>
 
     public TextMeshProUGUI CoinGOTxt;
 
-    public static bool gameOver;
+    public bool gameOver;
     public GameObject GameOverPanel;
     public static int jumlahkoin;
     public TextMeshProUGUI CoinTxt;
