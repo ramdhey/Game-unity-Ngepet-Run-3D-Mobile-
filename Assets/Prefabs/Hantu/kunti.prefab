@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 420801700530662024}
   hantu: {fileID: 8774244946247903049}
-  activationDistance: 15
+  activationDistance: 1
 --- !u!95 &420801700530662024
 Animator:
   serializedVersion: 3

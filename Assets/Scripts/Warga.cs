@@ -11,10 +11,16 @@ public class Warga : MonoBehaviour
 
     gameManager gameManager;
     private GameObject player;
-
+    private bool obstacleActive;
+    
     void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+
+    private void OnEnable()
+    {
+        obstacleActive = true;
     }
 
     private void Start()
@@ -24,7 +30,7 @@ public class Warga : MonoBehaviour
 
     private void Update()
     {
-        if ((warga.transform.position - player.transform.position).magnitude < triggerDistance)
+        if ((warga.transform.position - player.transform.position).magnitude < triggerDistance && obstacleActive)
         {
             CheckModeKarakterPlayer();
         }
@@ -38,6 +44,8 @@ public class Warga : MonoBehaviour
             anim.SetTrigger("isCatching");
             Invoke("GameOver", 0.25f);
         }
+
+        obstacleActive = false;
     }
 
     private void GameOver()
