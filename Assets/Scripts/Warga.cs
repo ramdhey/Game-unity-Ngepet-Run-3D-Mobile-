@@ -26,18 +26,22 @@ public class Warga : MonoBehaviour
     {
         if ((warga.transform.position - player.transform.position).magnitude < triggerDistance)
         {
-            StartCoroutine("catchBabi");
+            CheckModeKarakterPlayer();
         }
     }
 
-    IEnumerator catchBabi()
+    private void CheckModeKarakterPlayer()
     {
-        anim.SetTrigger("isCatching");
-        yield return new WaitForSeconds(1);
-
+        // Karakter lagi jadi babi
         if (BabiController.whichAvatarIsOn == 1)
         {
-            gameManager.Instance.GameOver();
+            anim.SetTrigger("isCatching");
+            Invoke("GameOver", 0.25f);
         }
+    }
+
+    private void GameOver()
+    {
+        gameManager.Instance.GameOver();
     }
 }
