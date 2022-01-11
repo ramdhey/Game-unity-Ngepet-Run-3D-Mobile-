@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b3e1a00e3a68ae4d9f8b9e46a158a4d
+guid: 66d59782c84696f4387ef88b84cbe854
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -8,32 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kayu Tembok
-    second: {fileID: 2100000, guid: 3e067092fabb56f49b1a64b4d7cf24ff, type: 2}
+    second: {fileID: 2100000, guid: b70254bdf8f830d48b933192b9c30cb7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: a9f0974dc43fac342b0be859645f643f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: kayu atap
-    second: {fileID: 2100000, guid: a8a452cd303290a4ea252fb1b30d3e27, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: kayu bawah
-    second: {fileID: 2100000, guid: 959905d3c13a4994ab9ce13823fc235c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: kayu pniggir
+      name: Kayu atap
     second: {fileID: 2100000, guid: 853feaec5d195994f87ef5ac8f74d18f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: roof
-    second: {fileID: 2100000, guid: 45464bcf74e002c4fa4c836380d5413a, type: 2}
+      name: Kayu samping
+    second: {fileID: 2100000, guid: 853feaec5d195994f87ef5ac8f74d18f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: a8a452cd303290a4ea252fb1b30d3e27, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

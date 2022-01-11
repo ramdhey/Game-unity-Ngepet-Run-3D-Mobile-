@@ -3,7 +3,27 @@ guid: c64e065e3993969469ecc3e1c7c67445
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kayu Sisi atap
+    second: {fileID: 2100000, guid: 0ad04494f29c6324e8a8be3c1ded69ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kayu Tembok
+    second: {fileID: 2100000, guid: 0ad04494f29c6324e8a8be3c1ded69ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kayu lumut
+    second: {fileID: 2100000, guid: a791126e0254b34408fc2679bc60febb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 45464bcf74e002c4fa4c836380d5413a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
