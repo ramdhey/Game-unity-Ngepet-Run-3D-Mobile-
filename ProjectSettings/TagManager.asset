@@ -14,6 +14,9 @@ TagManager:
   - Jalan
   - Jalan Item
   - hantu
+  - musik
+  - sfx
+  - musikvolume
   layers:
   - Default
   - TransparentFX
