@@ -26,6 +26,7 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
         if (other.CompareTag("Player"))
         {
             TambahinValue();
+            
         }
         
         if (other.CompareTag("Obstacle"))
@@ -39,10 +40,12 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
         if (mode == 1)
         {
             gameManager.jumlahkoin++;
+            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.koin);
         }
         else
         {
             gameManager.Instance.TambahinLilin();
+            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.lilin);
         }
 
         Destroy(gameObject);
