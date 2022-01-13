@@ -17,6 +17,7 @@ TagManager:
   - musik
   - sfx
   - musikvolume
+  - loncat
   layers:
   - Default
   - TransparentFX

@@ -13,9 +13,10 @@ public class gameManager : Singleton<gameManager>
     public float scoreCount;
     public float scorePersecond;
     public bool scoreIncreasing;
-
+   
     public TextMeshProUGUI Hiscore;
     public float HiscoreCount;
+   
 
     public TextMeshProUGUI CoinGOTxt;
 
@@ -45,6 +46,8 @@ public class gameManager : Singleton<gameManager>
         {
             HiscoreCount = PlayerPrefs.GetFloat("");
         }
+
+        
 
         
 
@@ -88,6 +91,8 @@ public class gameManager : Singleton<gameManager>
         Hiscore.text = "" + Mathf.Round(HiscoreCount);
 
 
+        
+
 
         if (gameOver)
         {
@@ -121,4 +126,6 @@ public class gameManager : Singleton<gameManager>
         gameOver = true;
 
     }
+
+    
 }

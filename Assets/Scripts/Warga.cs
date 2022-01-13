@@ -43,7 +43,7 @@ public class Warga : MonoBehaviour
         {
             anim.SetTrigger("isCatching");
             Invoke("GameOver", 0.25f);
-            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.ketangkep);
+            
         }
 
         obstacleActive = false;

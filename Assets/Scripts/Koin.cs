@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Koin : MonoBehaviour
 {
     public float kecepatanputarankoin = 90f;
     public GameObject coin;
     
+  
+
     void Update()
     {
         transform.Rotate(0,0,kecepatanputarankoin * Time.deltaTime);
@@ -20,6 +24,8 @@ public class Koin : MonoBehaviour
             
 
             PlayerPrefs.SetInt("", gameManager.jumlahkoin);
+
+            
 
 
             gameObject.SetActive(false);

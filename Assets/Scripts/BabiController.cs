@@ -8,6 +8,8 @@ public class BabiController : MonoBehaviour
     private CharacterController controller;
     private Vector3 pindah;
 
+    public static AudioMan audioMan;
+
 
     public static int jumlahkoin;
     public float laribabi;
@@ -55,8 +57,9 @@ public class BabiController : MonoBehaviour
             if (SwipeManager.swipeUp)
             {
                 Jump();
-                sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.loncat);
                 
+
+
             }
         }
         else
@@ -67,7 +70,7 @@ public class BabiController : MonoBehaviour
         if (SwipeManager.swipeDown)
         {
             StartCoroutine(Slide());
-            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.ndlosor);
+            
         }
 
         if (SwipeManager.swipeRight)
@@ -76,7 +79,7 @@ public class BabiController : MonoBehaviour
             if (desiredLane == 3)
                 desiredLane = 2;
 
-            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.geser);
+            
         }
 
         if (SwipeManager.swipeLeft)
@@ -85,7 +88,7 @@ public class BabiController : MonoBehaviour
             if (desiredLane == -1)
                 desiredLane = 0;
 
-            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.geser);
+            
         }
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -154,7 +157,7 @@ public class BabiController : MonoBehaviour
         {
             gameManager.Instance.gameOver = true;
             SetAnimasi("isDead", true);
-            sfxman.Instance.sumbernya.PlayOneShot(sfxman.Instance.gameover);
+            
         }
     }
 
