@@ -21,9 +21,9 @@ public class PauseConroller : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void HalamanSetting()
+    public void HalamanSetting(string HalamanSetting)
     {
-        Application.LoadLevel("HalamanSetting");
+        Application.LoadLevel(HalamanSetting);
     }
 
     public void MainMenu()
@@ -41,6 +41,7 @@ public class PauseConroller : MonoBehaviour
     {
 
         Pausepanel.SetActive(false);
+        
 
        
         Time.timeScale = 0;
