@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warga: {fileID: 1911774679393430135}
-  triggerDistance: 2.5
+  triggerDistance: 7
 --- !u!1 &2345241797515510381
 GameObject:
   m_ObjectHideFlags: 0
