@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseConroller : MonoBehaviour
 {
@@ -20,11 +21,17 @@ public class PauseConroller : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void HalamanSetting()
+    {
+        Application.LoadLevel("HalamanSetting");
+    }
+
     public void MainMenu()
     {
         Application.LoadLevel(0);
     }
 
+    
     public void Exit()
     {
         Application.Quit();
@@ -34,6 +41,8 @@ public class PauseConroller : MonoBehaviour
     {
 
         Pausepanel.SetActive(false);
+
+       
         Time.timeScale = 0;
 
     }
