@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 2028072309900922085}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -1.33, y: 0.6, z: -40}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4590399249399907411}
   - {fileID: 6581113277832753946}
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warga: {fileID: 2028072309900922085}
-  triggerDistance: 7
+  triggerDistance: 3
 --- !u!1 &2200622138799839425
 GameObject:
   m_ObjectHideFlags: 0
