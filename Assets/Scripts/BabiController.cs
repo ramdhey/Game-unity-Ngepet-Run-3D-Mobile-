@@ -29,6 +29,8 @@ public class BabiController : MonoBehaviour
     public AudioClip jumpAudio;
     public AudioClip slideAudio;
     public AudioClip swipeAudio;
+    public AudioClip gameover;
+   
 
     // Babi = 1
     // Manusia = 2
@@ -155,6 +157,7 @@ public class BabiController : MonoBehaviour
             Destroy(other.gameObject);
             gameManager.jumlahLilin += 1;
             
+            
         }
     }
 
@@ -164,7 +167,7 @@ public class BabiController : MonoBehaviour
         {
             gameManager.Instance.gameOver = true;
             SetAnimasi("isDead", true);
-            
+            EazySoundManager.PlaySound(gameover);
         }
     }
 

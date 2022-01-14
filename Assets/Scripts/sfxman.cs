@@ -7,13 +7,17 @@ public class sfxman : MonoBehaviour
     public static sfxman Instance { get; set; }
 
     public AudioSource sumbernya;
-    public AudioClip loncat;
-    public AudioClip ndlosor;
-    public AudioClip geser;
+    public AudioClip Musik;
+
+    public AudioSource sfx;
+   
     public AudioClip koin;
     public AudioClip lilin;
-    public AudioClip gameover;
     public AudioClip ketangkep;
+
+
+
+   
 
 
 

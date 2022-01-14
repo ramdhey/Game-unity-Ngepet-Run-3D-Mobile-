@@ -8,6 +8,8 @@ public class Warga : MonoBehaviour
     Animator anim;
     public GameObject warga;
     public float triggerDistance = 15f;
+    
+    
 
     gameManager gameManager;
     private GameObject player;
@@ -43,6 +45,8 @@ public class Warga : MonoBehaviour
         {
             anim.SetTrigger("isCatching");
             Invoke("GameOver", 0.25f);
+
+            sfxman.Instance.sfx.PlayOneShot(sfxman.Instance.ketangkep);
             
         }
 

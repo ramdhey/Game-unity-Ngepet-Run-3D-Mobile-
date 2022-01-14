@@ -9,6 +9,7 @@ public class Lilin : MonoBehaviour
         if (other.tag == "manusia")
         {
             gameManager.jumlahLilin += 1;
+            sfxman.Instance.sfx.PlayOneShot(sfxman.Instance.lilin);
             gameObject.SetActive(false);
         }
     }

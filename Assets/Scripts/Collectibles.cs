@@ -40,12 +40,14 @@ public class Collectibles : MonoBehaviour, IEventListener<GameEvent>
         if (mode == 1)
         {
             gameManager.jumlahkoin++;
-            
+            sfxman.Instance.sfx.PlayOneShot(sfxman.Instance.koin);
+
         }
         else
         {
             gameManager.Instance.TambahinLilin();
-           
+            sfxman.Instance.sfx.PlayOneShot(sfxman.Instance.lilin);
+
         }
 
         Destroy(gameObject);

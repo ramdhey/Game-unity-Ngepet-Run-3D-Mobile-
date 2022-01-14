@@ -23,6 +23,7 @@ public class Koin : MonoBehaviour
             gameManager.jumlahkoin += 1;
             
 
+
             PlayerPrefs.SetInt("", gameManager.jumlahkoin);
 
             
