@@ -28,7 +28,7 @@ public class PauseConroller : MonoBehaviour
 
     public void MainMenu()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
     }
 
     
