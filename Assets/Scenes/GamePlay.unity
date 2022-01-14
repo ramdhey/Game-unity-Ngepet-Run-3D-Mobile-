@@ -3356,6 +3356,9 @@ MonoBehaviour:
   gameManager: {fileID: 74684846}
   manusia: {fileID: 129608064}
   babi: {fileID: 9153671216265120578}
+  jumpAudio: {fileID: 8300000, guid: cd4f869acf1c731428429426d9328ffc, type: 3}
+  slideAudio: {fileID: 8300000, guid: 4451f901ffa490a4d8d01e7126574e9c, type: 3}
+  swipeAudio: {fileID: 8300000, guid: eee74468930f4354e8db608c1033297d, type: 3}
 --- !u!1 &1144468301
 GameObject:
   m_ObjectHideFlags: 0

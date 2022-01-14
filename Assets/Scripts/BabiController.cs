@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using GameLokal.Toolkit;
+using Hellmade.Sound;
 using UnityEngine;
 
 public class BabiController : MonoBehaviour
@@ -25,6 +26,9 @@ public class BabiController : MonoBehaviour
     public gameManager gameManager;
 
     public GameObject manusia, babi;
+    public AudioClip jumpAudio;
+    public AudioClip slideAudio;
+    public AudioClip swipeAudio;
 
     // Babi = 1
     // Manusia = 2
@@ -79,7 +83,7 @@ public class BabiController : MonoBehaviour
             if (desiredLane == 3)
                 desiredLane = 2;
 
-            
+            EazySoundManager.PlaySound(swipeAudio);
         }
 
         if (SwipeManager.swipeLeft)
@@ -88,7 +92,7 @@ public class BabiController : MonoBehaviour
             if (desiredLane == -1)
                 desiredLane = 0;
 
-            
+            EazySoundManager.PlaySound(swipeAudio);
         }
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -130,6 +134,7 @@ public class BabiController : MonoBehaviour
 
         SetAnimasi("isGrounded", true);
 
+        EazySoundManager.PlaySound(jumpAudio);
     }
 
     private IEnumerator Slide()
@@ -139,6 +144,8 @@ public class BabiController : MonoBehaviour
         yield return new WaitForSeconds(1.3f);
 
         SetAnimasi("isSliding", false);
+        
+        EazySoundManager.PlaySound(slideAudio);
     }
 
     private void OnTriggerEnter(Collider other)
